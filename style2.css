@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background:#fff9f9;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+main
+{
+height: 100%;
+}
+
+/*personalizasão das imagens*/
+  .img-principal{
+    width: 1423px;
+    height: 800px ;
+    background-size: cover;
+  }
+
+  .fumo{
+    width: 47vh;
+    height: 50vh;
+    margin-top: 15px;
+    border-radius: 2px 20px 20px 20px ;
+  }
+  .mapa{
+    margin-top: 15px;
+    width: 47vh;
+    height: 50vh;
+    border-radius: 2px 20px 20px 20px ;
+  }
+  .junina{
+    margin-top: 15px;
+    width: 47vh;
+    height: 50vh;
+    border-radius: 2px 20px 20px 20px ;
+  }
+  .cruz{
+    margin-top: 15px;
+    width: 47vh;
+    height: 50vh;
+    border-radius: 2px 20px 20px 20px ;
+  }
+  .barretos{
+    margin-top: 15px;
+    width: 47vh;
+    height: 50vh;
+    border-radius: 2px 20px 20px 20px ;
+  }
+  .reis{
+    margin-top: 15px;
+    width: 47vh;
+    height: 50vh;
+    border-radius: 2px 20px 20px 20px ;
+  }
+  .aparecida{
+    margin-top: 15px;
+    width: 47vh;
+    height: 47vh;
+    border-radius: 2px 20px 20px 20px ;
+  }
+/*PERSONALIZAÇÃO DO TEXTO*/    
+  .conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0px 60px 0px 60px;
+}
+
+.sub-sub-titulo{
+  padding-top: 20px;
+}
+.sub-titulo{
+  padding-top: 20px;
+}
+
+.texto{
+  text-align: justify;
+  font-size: 17px;
+  text-align: center;
+  text-align:justify;
+  text-decoration:none;
+  width: 70vh;
+  padding-top: 20px;
+  color: #000;   
+
+}
+
+ /*NAV-BAR*/
+ header{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  transition: all 0.5s;
+ }
+.menu-nav {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.menu-nav:hover {
+  opacity: 0.7;
+  text-underline-offset: 4px;
+  text-decoration: underline;
+  text-decoration-color: burlywood;
+}
+
+.logo{
+  text-decoration: none;
+  color: #fff ;
+  width: 20vh;
+  height: 20vh;
+  scale: 0.10;
+  justify-content: center;
+  align-items: center;
+}
+.logo3{
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  padding-top: 70vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #f9ea4100;
+  height: 10vh;
+  font-size: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+@media (max-width: 999px) {
+
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 100vw;
+    height:  90vh;
+    background: rgb(243, 133, 43);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 2;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/*FOOTER*/
+footer{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  width: 100%;
+  color: #000;
+  margin-top: 30px;
+ }
+ .footer{
+  background-color:#141414;
+ }
+
+ .logo2{
+  background-image: url(imagens/logo-branca.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  height: 15vh;
+ }
+
+ 
+ .mapa_pagina{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 3rem 3.5rem;
+ }
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  color: #7e7d7d9a;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+}
+ .link-direto{
+  text-decoration: none;
+ }
+ 
+
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link:hover{
+ color: #141414;
+ opacity: 0.8;
+}
+
+.footer-list h3{
+  color: rgb(143, 137, 137);  
+}
+
+.footer-link{
+  color: #141414;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+
+/*responsividade*/
+
+@media screen and (max-width: 900px){
+  .conteudo{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   padding-left: 10vh;
+  }
+
+  .texto{
+    height: 15vh;
+    width: 30vh;
+    font-size: 15px ;
+  }
+
+  .fumo{
+    width: 38vh;
+    height: 40vh;
+    margin-top: 15px;
+  }
+  .mapa{
+    margin-top: 15px;
+    width: 38vh;
+    height: 40vh;
+  }
+  .junina{
+    margin-top: 15px;
+    width: 38vh;
+    height: 40vh;
+  }
+  .cruz{
+    margin-top: 15px;
+    width: 38vh;
+    height: 40vh;
+  }
+  .barretos{
+    margin-top: 15px;
+    width: 38vh;
+    height: 40vh;
+  }
+  .reis{
+    margin-top: 15px;
+    width: 38vh;
+    height: 40vh;
+  }
+  .aparecida{
+    margin-top: 15px;
+    width: 38vh;
+    height: 40vh;
+  }  
+  .img-principal{
+    width: 816px;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main1{
+    height: 36vh;
+  }
+  .mapa_pagina{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .conteudo{
+      padding: 0px 20px 0px 40px; ;
+  }
+
+  .texto{
+    height: 70vh;
+    width: 60vh;
+    margin-bottom: 2vh;
+    font-size: 15px;
+  }
+  .o-violeiro{
+    margin: 0px 0px 20px 0px;
+    height: 35vh;
+    width: 35vh;  
+  }
+}
+@media screen and (max-width: 413px) {
+  .main1{
+    height: 40vh;
+  }
+  .mapa_pagina{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .texto{
+    height: 70vh;
+    width: 38vh;
+    margin-bottom: 20vh;
+  }
+
+  .nav-list.active{
+    display: absolute;
+  }
+  .o-violeiro{
+    margin: 0px 0px 20px 0px;
+    height: 40vh;
+    width: 40vh;  
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .mapa_pagina{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
