@@ -22,6 +22,7 @@
     color: #000;
     margin: 0;
     padding: 0;
+
   }
  .main1{
   height: 100vh;
@@ -36,6 +37,7 @@
     display: flex;
     justify-content:space-evenly;
     gap: 2px;
+    height: 70vh;
     padding: 0px 30px 0px 40px;
   }
 
@@ -92,6 +94,9 @@
     align-items: flex-start;
     height: 400px;
   }
+   ul .nav-list{
+    overflow: hidden;
+   }
   
   nav {
     display: flex;
@@ -106,6 +111,7 @@
   .nav-list {
     list-style: none;
     display: flex;
+    overflow-x: hidden;
   }
   
   .nav-list li {
@@ -523,7 +529,7 @@ mais personalização
 
 /*responsividade*/
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px ){
   
   .main1{
     height: 45vh;
@@ -537,7 +543,9 @@ mais personalização
    flex-direction: column;
    justify-content: space-evenly;
    padding-left: 20px;
-   padding-bottom: 20px;
+   padding-bottom: 60px;
+
+   height: 70vh;
   }
 
   .texto{
@@ -576,7 +584,13 @@ mais personalização
   }
   
   .conteudo{
-      padding: 0px 20px 0px 40px; ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    height: 70vh;  
+    padding: 0px 20px 0px 40px; 
   }
 
   .texto{
@@ -599,7 +613,14 @@ mais personalização
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-
+  .conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    height: 70vh; 
+  }
   .texto{
     height: 70vh;
     width: 38vh;
@@ -619,5 +640,18 @@ mais personalização
 @media screen and (max-width: 426px) {
   .mapa_pagina{
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .img-principal{
+    width: 412px;
+  }
+}
+@media screen and (max-width: 413px){
+  .div-img-prin{
+    width: 412px;
+    scale: 0.10 ;
   }
 }
